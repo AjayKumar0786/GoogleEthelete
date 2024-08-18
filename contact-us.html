@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Athlete</title>
+    <!-- external-css -->
+    <link rel="stylesheet" href="./css/style.css">
+     <!-- bootstrap-css & js-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src = "js/bootstrap-min.js" ></script>
+    <!-- fontawesom-css & js-->
+
+    <link rel="stylesheet" href="./css/fontawesome-all.css">
+    <script src="./js/fontawesome.js"></script>
+    <!-- lightbox -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+
+  
+ 
+  
+
+    
+  
+  
+</head>
+<body>
+<!------------------- header-section---------------------------------->
+<!-- navbar-section -->
+<section class="nav-section">
+<div class="container container-xl container-xxl">
+    <div class="row align-items-center">
+        <nav class="navbar navbar-expand-lg navbar-light t">
+         
+              <a class="navbar-brand" href="./index.html"><img src="./img/main-logo.png" alt="main-logo" class="main-logo img-fluid"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-nav">
+                  <li class="nav-item ">
+                    <a class="nav-link " aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./web-design.html">Web Design & Redesign</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Our Books</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Blog</a>
+                  </li>
+                 
+                </ul>
+                <ul class="number" >
+                    <li class=" nav-item">
+                        <a href="tel:08000261711"><i class="fa-solid fa-phone me-lg-2"></i> 7462874656 </a>
+                       </li>
+                </ul>
+          
+                <div class="weekly" >
+                  <a class="btn btn-primary request-btn animated-buttonns victoria-one " href="javascript:void(0)">Request a free review</a>
+                  <p class="request-text text-primary"> <a class="links" href="javascript:void(0)"><i class="fa-regular fa-envelope pe-2"></i>Subscribe</a> </p>
+                  <p><img src="./img/aarrow.png" alt="arrow" class="arrow"></p>
+                  <p class="get-weekly-txt">Get Weekly <br>Google tips</p>
+                </div> 
+                 
+               
+              </div>
+       
+          </nav>
+    </div>
+</div>
+</section>
+<!-- contact-form -->
+		<section class="contact-sec pt-3 pb-3 mt-lg-5">
+		<div class="container container-xl container-xxl">
+			<div class="row">
+			<div class="col-lg-12">
+			<h2>Request a callback</h2>
+			<p>If you need support to set up a Google Ads account, please fill n this form and we will do our best to get back to you within 2 working days
+</p>
+            <form class="row" action="./contact-form.php" onsubmit="return submitUserForm()"; method="POST">
+                <div class="form-group col-md-6 mt-3">
+             
+                  <input type="text" class="form-control custom-form"  name="Name"  placeholder="First name * "  required>
+
+                </div>
+                <div class="form-group col-md-6 mt-3">
+             
+                  <input type="text" class="form-control custom-form"  name="lname"  placeholder="Last name * "  required>
+
+                </div>
+				   <div class="form-group col-md-6   mt-3">
+             
+                    <input type="text" class="form-control custom-form"  name="Phone"  placeholder="Phone number * "  required>
+  
+                  </div>
+                <div class="form-group  col-md-6  mt-3">
+
+                  <input type="email" class="form-control custom-form"  name="Email"  placeholder="Email address *"  required>
+
+                </div>
+             
+                <div class="form-group  col-md-6  mt-3">
+
+                  <input type="text" class="form-control custom-form"  name="url"  placeholder="Your URL *"  required>
+
+                </div>
+                <div class="form-group  col-md-6  mt-3">
+
+                  <select class="form-select" aria-label="Default select example"  name="questions"  required>
+					  <option selected>What is your question regarding?</option>
+					  <option value="1">One</option>
+					  <option value="2">Two</option>
+					  <option value="3">Three</option>
+					</select>
+
+                </div>
+
+			<div class="col-md-6  mt-3">
+				<div class="form-check  mt-3">
+  <input class="form-check-input" type="checkbox" value="" id="checkbox-1"  required>
+  <label class="form-check-label" for="checkbox-1">
+   I agree to be contacted and to receive informatin about Google ads by email or phone from Google. *
+  </label>
+  </div>
+  				<div class="form-check mt-3">
+  <input class="form-check-input" type="checkbox" value="" id="checkbox-2"  required>
+  <label class="form-check-label" for="checkbox-2">
+    I accept Google's <a href="#">Terms and Conditions</a> and acknowledge that my information will be used in accordance with Google's  <a href="#">Privacy Policy</a>.*
+  </label>
+</div>
+      	</div>       
+                <div class="col-md-6  mt-3">
+              <div class="g-recaptcha" data-sitekey="6LdGBrEgAAAAAEWo0TEd7-6XvcFZd43Z0q_1_oGS" data-callback="verifyCaptcha"> </div>  <div id="g-recaptcha-error"></div>
+
+            </div>		
+         <div class="col-md-12  m-auto d-block w-100 text-center">
+                    <button type="submit" class="btn btn-primary  animated-buttonns victoria-one  mt-3 contact-btn" name="submit">Submit</button>
+              
+				</div>
+			</div>
+			</form>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+  <!-- business-from-all-section -->
+		<section class="map-sec text-center">
+		<div class="container container-xl container-xxl">
+			<div class="row">
+			<div class="col-lg-12">
+			<h2>Our Clients</h2>
+			<img src="./img/map-img.png" alt="map" class="img-fluid mt-lg-0 mt-3">
+			
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- google-review-section -->
+<section class="google-review mt-lg-0 mt-5">
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <div class="elfsight-app-7095e9f1-a989-41a0-8b1b-c70708a78fb0"></div>
+
+</section>
+
+
+<!-- need-help-choosing-section -->
+<section class="need-help-section not-sure-sec">
+  <div class="container container-xl container-xxl">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center wow slideInDown" data-wow-duration="1s" data-wow-delay="200ms" >
+        <div class="d-flex justify-content-center"> 
+          <div class="dotted-motion" data-component="dotted">
+            <svg class="vertical-dots"  height="100%" role="presentation" aria-hidden="true">
+          <line class="vertical-dots__line" x1="6" x2="6" y1="6" y2="100%" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="0, 18" stroke = "#80868b"></line>
+          <circle cx="6" cy="6" r="6" class="scroll-circle green-circle " >
+          </circle>
+        </svg></div>
+        </div>
+  <h2>Not Sure What you Need?</h2>
+  <p>Our <b>expert Digital Marketing Consultants</b> are here to help</p>
+  <p>Request a free review and we'll record a 15-minute video reviewing your website.</p>
+  <p>Let's make your business a success</p>
+  <div class="get-more-lead-btn">
+    <a class="btn btn-primary animated-buttonns victoria-one" href="javascript:void(0)">Request a free Website and Marketing Review</a>
+  </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+<!-- footer-section -->
+<section class="footer-section pt-5">
+  <div class="contianer container-xl container-xxl">
+ 
+     <div class="row align-items-center">
+      <div class="col-lg-2 col-3 footer-logo">
+           <a href="./index.html"><img src="./img/main-logo.png" alt="footer-logo" class="img-fluid"></a>
+      </div>
+      <div class="col-lg-10 col-9">
+ <ul class="footer-link">
+     
+        <li> <a href="javascript:void(0)" >Privacy</a></li>
+        <li><a href="javascript:void(0)">Terms</a></li>
+        <li><a href="javascript:void(0)">About Google</a></li>
+        <li><a href="javascript:void(0)">Stay safe with Google</a></li>
+        <li><a href="javascript:void(0)"><i class="fa-solid fa-circle-question"></i> Help</a></li>
+      </ul>
+      </div>
+     
+     </div>
+  </div>
+</section>
+
+<script src = "./js/slider.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src = "./js/main.js"></script>
+<script src = "./js/wow.min.js"></script>
+<script>
+var recaptcha_response = '';
+function submitUserForm() {
+    if(recaptcha_response.length == 0) {
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;font-size:14px;">Please Verify Captcha.</span>';
+        return false;
+    }
+    return true;
+}
+ 
+function verifyCaptcha(token) {
+    recaptcha_response = token;
+    document.getElementById('g-recaptcha-error').innerHTML = '';
+}
+</script>
+</body>
+</html>
